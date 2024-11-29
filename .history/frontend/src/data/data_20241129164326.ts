@@ -111,7 +111,7 @@ export const displayBox2 = [
         title: 'Sellers',
         description: `Learn how I make selling your property a rewarding and effortless process. From preparing your home for the market to securing the best possible price, my proven strategies and personalized approach ensure you achieve your goals with confidence and ease.`,
         buttonText: 'Explore Sellers Page',
-        destination: '/selling-home'
+        destination: '/selling'
     }
 ];
 

@@ -42,12 +42,11 @@ interface SubMenuProps {
 
   const bigLinks = [
     {
-      name:'Back to Focus Flow Software.com',
-      destination:'www.focusflowsoftware.com',
+      name:'Back to Focus Flow Software.com'
     },
     {
       name: 'Homepage',
-      destination:'/',
+      destination:'www.focusflowsoftware.com',
      
       //  
       

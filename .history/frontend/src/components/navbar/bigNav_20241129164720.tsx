@@ -47,7 +47,7 @@ interface SubMenuProps {
     },
     {
       name: 'Homepage',
-      destination:'/',
+      destination:'www.focusflowsoftware.com',
      
       //  
       
