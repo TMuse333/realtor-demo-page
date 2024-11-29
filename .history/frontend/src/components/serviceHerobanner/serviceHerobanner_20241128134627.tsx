@@ -1,6 +1,7 @@
 
 import React from 'react'
-
+import assante from '../../../public/media/Assante-1012.webp'
+import {motion} from 'framer-motion'
 import Image from 'next/image'
 
 interface Props {
@@ -14,7 +15,7 @@ interface Props {
 
 const ServiceHerobanner:React.FC<Props> = ({
     src,alt,title,description,
-    buttonText,
+    buttonText,destination
 }) => {
 
 

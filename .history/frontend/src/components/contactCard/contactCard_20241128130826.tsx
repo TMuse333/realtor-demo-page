@@ -22,7 +22,7 @@ interface Props {
 
 
 const ContactCard:React.FC<Props> = ({
-    src,alt,name,
+    src,alt,name,description,
     phone,email,socials,title,quote
 }) => {
 

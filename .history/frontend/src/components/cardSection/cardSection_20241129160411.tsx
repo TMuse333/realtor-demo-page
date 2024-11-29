@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 // import {motion, animate, useInView} from 'framer-motion'
 
 interface PriceCard {

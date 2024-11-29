@@ -229,17 +229,17 @@ const CarouselElement: React.FC<SliderProps> = ({
   alt,
   description,
   index,
-
+  carouselLength,
   currentElement,
   shift,
   title,
   isVideo
 }) => {
   const [scrollMarginTop, setScrollMarginTop] = useState(0);
-//   const isCurrentSlide = currentElement === index;
-//   const [animationComplete, setAnimationComplete] = useState(false);
+  const isCurrentSlide = currentElement === index;
+  const [animationComplete, setAnimationComplete] = useState(false);
   
-//   const { isMobile } = useGeneralContext();
+  const { isMobile } = useGeneralContext();
 
   const updateScrollMargin = () => {
     const element = document.getElementById(`carousel-element-${index}`);

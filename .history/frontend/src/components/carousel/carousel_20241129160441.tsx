@@ -28,18 +28,18 @@ style }) => {
   const [isCoolDown, setIsCoolDown] = useState(false);
   // const [isDesktop, setIsDesktop] = useState(false);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsDesktop(window.innerWidth >= 865);
-  //   };
-  //   handleResize();
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth >= 865);
+    };
+    handleResize();
 
-  //   window.addEventListener('resize', handleResize);
+    window.addEventListener('resize', handleResize);
 
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const coolDownTime = 1000;
 

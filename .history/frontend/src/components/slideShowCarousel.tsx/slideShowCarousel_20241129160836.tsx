@@ -239,7 +239,7 @@ const CarouselElement: React.FC<SliderProps> = ({
 //   const isCurrentSlide = currentElement === index;
 //   const [animationComplete, setAnimationComplete] = useState(false);
   
-//   const { isMobile } = useGeneralContext();
+  const { isMobile } = useGeneralContext();
 
   const updateScrollMargin = () => {
     const element = document.getElementById(`carousel-element-${index}`);

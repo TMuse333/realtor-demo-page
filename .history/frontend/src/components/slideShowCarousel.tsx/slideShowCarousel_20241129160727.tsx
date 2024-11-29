@@ -57,7 +57,7 @@ const CarouselController: React.FC<ControllerProps> = ({
   scrollDirection,
   isScrolling
 }) => {
-
+  const [isAnimating, setIsAnimating] = useState(false);
   const [slideProgress, setSlideProgress] = useState(0);
   const [slideProgressReset, setSlideProgressReset] = useState(false);
   const [showRefreshBar, setShowRefreshBar] = useState(false);
@@ -159,31 +159,31 @@ useEffect(() => {
 }, [adjustedScrollPercent]);
 
   // Function to calculate width based on scroll percentage
-// const getCircleWidth = (index: number) => {
-//   const baseWidth = 15; // Base width for non-current elements
-//   const currentWidth = 60; // Width for the current element
+const getCircleWidth = (index: number) => {
+  const baseWidth = 15; // Base width for non-current elements
+  const currentWidth = 60; // Width for the current element
 
-//   // Ensure the scroll direction is valid
-//   if (!scrollDirection) return baseWidth;
+  // Ensure the scroll direction is valid
+  if (!scrollDirection) return baseWidth;
 
-//   // For the current element
-//   if (index === currentElement) {
-//     return Math.max(currentWidth - (adjustedScrollPercent / 50) * currentWidth, 0);
-//   } 
+  // For the current element
+  if (index === currentElement) {
+    return Math.max(currentWidth - (adjustedScrollPercent / 50) * currentWidth, 0);
+  } 
   
-//   // For the left neighbor of the current element when scrolling right
-//   if (scrollDirection === 'left' && index === currentElement - 1 && currentElement > 0) {
-//     return Math.min(baseWidth + (adjustedScrollPercent / 20) * (currentWidth - baseWidth), currentWidth);
-//   }
+  // For the left neighbor of the current element when scrolling right
+  if (scrollDirection === 'left' && index === currentElement - 1 && currentElement > 0) {
+    return Math.min(baseWidth + (adjustedScrollPercent / 20) * (currentWidth - baseWidth), currentWidth);
+  }
   
-//   // For the right neighbor of the current element when scrolling left
-//   if (scrollDirection === 'right' && index === currentElement + 1 && currentElement < carouselLength - 1) {
-//     return Math.min(baseWidth + (adjustedScrollPercent / 20) * (currentWidth - baseWidth), currentWidth);
-//   }
+  // For the right neighbor of the current element when scrolling left
+  if (scrollDirection === 'right' && index === currentElement + 1 && currentElement < carouselLength - 1) {
+    return Math.min(baseWidth + (adjustedScrollPercent / 20) * (currentWidth - baseWidth), currentWidth);
+  }
   
-//   // Default for other elements
-//   return baseWidth;
-// };
+  // Default for other elements
+  return baseWidth;
+};
 
 
 
@@ -229,17 +229,17 @@ const CarouselElement: React.FC<SliderProps> = ({
   alt,
   description,
   index,
-
+  carouselLength,
   currentElement,
   shift,
   title,
   isVideo
 }) => {
   const [scrollMarginTop, setScrollMarginTop] = useState(0);
-//   const isCurrentSlide = currentElement === index;
-//   const [animationComplete, setAnimationComplete] = useState(false);
+  const isCurrentSlide = currentElement === index;
+  const [animationComplete, setAnimationComplete] = useState(false);
   
-//   const { isMobile } = useGeneralContext();
+  const { isMobile } = useGeneralContext();
 
   const updateScrollMargin = () => {
     const element = document.getElementById(`carousel-element-${index}`);

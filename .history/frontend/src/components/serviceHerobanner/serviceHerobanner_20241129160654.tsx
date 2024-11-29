@@ -1,6 +1,7 @@
 
 import React from 'react'
-
+import assante from '../../../public/media/Assante-1012.webp'
+import {motion} from 'framer-motion'
 import Image from 'next/image'
 
 interface Props {

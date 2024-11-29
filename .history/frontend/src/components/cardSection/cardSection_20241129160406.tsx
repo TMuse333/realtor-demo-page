@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useRef} from "react";
 // import {motion, animate, useInView} from 'framer-motion'
 
 interface PriceCard {
@@ -16,7 +16,7 @@ const PriceCard:React.FC<PriceCard> = ({
    
 }) => {
 
-    // const nameRef = useRef(null)
+    const nameRef = useRef(null)
 
     const [style, setStyle] = useState({ transform: 'rotateX(0deg) rotateY(0deg)' });
 

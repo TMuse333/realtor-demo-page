@@ -26,7 +26,7 @@ const ImageTextBox: React.FC<Props> = ({
   buttonText,
   destination,
   reverse,
-
+  iframe,
 }) => {
   const [slideComplete, setSlideComplete] = useState(false);
   const { isMobile } = useGeneralContext();
