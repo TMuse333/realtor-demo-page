@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Realtor demo page",
-  description: "Sample realtor page for focusflow software.com",
+  title: "Sample realtor page for focusflow software.com",
+  description: "A sample website for Bonnie Hutchins",
 };
 
 export default function RootLayout({
