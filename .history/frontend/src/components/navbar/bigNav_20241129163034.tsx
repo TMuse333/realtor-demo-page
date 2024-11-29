@@ -456,7 +456,7 @@ const {heroInView} = useGeneralContext()
                 <div key={index}
                
                  className={` relative font-semibold
-                 my-auto ${!heroInView ? 'text-black hover:text-white' : 'text-white'}`}
+                 my-auto ${!heroInView ? 'text-black' : 'text-white'}`}
                 
                  >
                    
@@ -465,7 +465,7 @@ const {heroInView} = useGeneralContext()
                       <p
                        onMouseEnter={()=>handleSubMenuHover(index)}
                        onMouseLeave={handleSubMenuLeave}
-                      className="mt-auto relative z-[4]   text-sm sm:text-md ">{link.name}</p>
+                      className="mt-auto relative z-[4]   text-sm sm:text-md text-red-200">{link.name}</p>
                                  {link.subMenuSrc && link.subMenuAlt &&
                                  link.desktopDescription && (
 
@@ -486,7 +486,7 @@ index={index}
                         <>
                     
   <Link href={link.destination? link.destination : ''}>
-    <p className="my-auto text-sm relative z-[4] 
+    <p className="my-auto text-sm relative z-[4] hover:text-red-200
     sm:text-md">
       {link.name}
     </p>

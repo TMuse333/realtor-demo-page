@@ -456,7 +456,7 @@ const {heroInView} = useGeneralContext()
                 <div key={index}
                
                  className={` relative font-semibold
-                 my-auto ${!heroInView ? 'text-black hover:text-white' : 'text-white'}`}
+                 my-auto ${!heroInView ? 'text-black' : 'text-white'}`}
                 
                  >
                    

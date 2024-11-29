@@ -245,7 +245,7 @@ interface SubMenuProps {
     return (
         <nav className={`fixed top-0 right-0 bg-transparent
         h-screen w-[75vw] max-w-[470px] z-10 transition-transform
-        
+        text-white
       ${!subMenuClicked ? 'translate-x-full' : 'translate-x-0'}`}>
         <div className="relative h-full w-full z-40 ">
             {!secondarySubMenuClicked && (
@@ -264,7 +264,7 @@ interface SubMenuProps {
   {links.map((link, index) => (
     <li
       key={index}
-      className={`text-md sm:text-xl mb-4 mr-auto text-white pl-2 pr-2 hover:text-black]`}>
+      className={`text-md sm:text-xl mb-4 mr-auto text-white pl-2 pr-2 hover:text-${heroInView ? '[#00bfff]' : 'black'}]`}>
       {link.destination ? (
         <Link href={link.destination}>
           {link.name}
@@ -286,7 +286,7 @@ interface SubMenuProps {
 
                             <button className="bg-transparent
                             top-[5%] absolute right-[10%] !text-2xl
-                            hover:text-gray-500"
+                            hover:text-[#00bfff]"
                             onClick={exitFullMobileNav}>
                                 X
                             </button>
@@ -303,7 +303,7 @@ interface SubMenuProps {
                                 {links[secondaryLinksIndex].secondaryLinks.map((link,index)=> (
                                   
                                         <li className="mb-2 text-white transition-colors
-                                         hover:text-black md:xl"
+                                         hover:text-[#00bfff] md:xl"
                                          key={index}>
                                             <Link
                                   
@@ -403,7 +403,7 @@ const {heroInView} = useGeneralContext()
 
     return (
         <nav className={`fixed top-[0%] z-[301] w-screen left-0  h-[30px] flex justify-between items-center
-          ${heroInView ? 'bg-transparent' : 'bg-[#00bfff]'}`}>
+         text-white ${heroInView ? 'bg-transparent' : 'bg-[#00bfff]'}`}>
             <MobileSubMenu
             subMenuClicked={subMenuClicked}
             setSubMenuClicked={setSubMenuClicked}
@@ -456,7 +456,7 @@ const {heroInView} = useGeneralContext()
                 <div key={index}
                
                  className={` relative font-semibold
-                 my-auto ${!heroInView ? 'text-black hover:text-white' : 'text-white'}`}
+                 my-auto ${!heroInView ? 'text-white' : 'text-white'}`}
                 
                  >
                    
@@ -465,7 +465,7 @@ const {heroInView} = useGeneralContext()
                       <p
                        onMouseEnter={()=>handleSubMenuHover(index)}
                        onMouseLeave={handleSubMenuLeave}
-                      className="mt-auto relative z-[4]   text-sm sm:text-md ">{link.name}</p>
+                      className="mt-auto relative z-[4]   text-sm sm:text-md text">{link.name}</p>
                                  {link.subMenuSrc && link.subMenuAlt &&
                                  link.desktopDescription && (
 
@@ -486,7 +486,7 @@ index={index}
                         <>
                     
   <Link href={link.destination? link.destination : ''}>
-    <p className="my-auto text-sm relative z-[4] 
+    <p className="my-auto text-sm relative z-[4] hover:text-red-200
     sm:text-md">
       {link.name}
     </p>

@@ -456,7 +456,7 @@ const {heroInView} = useGeneralContext()
                 <div key={index}
                
                  className={` relative font-semibold
-                 my-auto ${!heroInView ? 'text-black hover:text-white' : 'text-white'}`}
+                 my-auto ${!heroInView ? 'text-black' : 'text-white'}`}
                 
                  >
                    
@@ -486,7 +486,7 @@ index={index}
                         <>
                     
   <Link href={link.destination? link.destination : ''}>
-    <p className="my-auto text-sm relative z-[4] 
+    <p className="my-auto text-sm relative z-[4] hover:text-red-200
     sm:text-md">
       {link.name}
     </p>
