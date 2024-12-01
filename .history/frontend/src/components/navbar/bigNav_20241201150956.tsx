@@ -39,11 +39,11 @@ interface SubMenuProps {
         }[]
     }[]
   }
-// 4 by 6 feet, 2 by 3 inches
+// 4 by 
   const bigLinks = [
     {
       name:'Back to Focus Flow Software.com',
-      destination:'https://www.focusflowsoftware.com',
+      destination:'www.focusflowsoftware.com',
     },
     {
       name: 'Homepage',
