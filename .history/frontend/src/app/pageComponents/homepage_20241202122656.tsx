@@ -30,10 +30,10 @@ const Homepage =()=> {
     <AuroraHero/>
     {/* <Herobanner/> */}
     {/* <div className="h-screen"/> */}
-    <CountUpStats
+    {/* <CountUpStats
     number1="45"
     number2="15.5"
-    number3="20"/>
+    number3="20"/> */}
 
 <ExperienceCard
     {...experienceCard2}

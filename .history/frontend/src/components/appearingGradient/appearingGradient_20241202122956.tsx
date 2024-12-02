@@ -77,7 +77,7 @@ const {isMobile, darkMode, textColor} = useGeneralContext()
                 <div className="relative">
                     <div id={`${text}-cover`}
                     className="absolute z-[2]
-                    bg-gray-300 rounded-b-full
+                    bg-red-200 rounded-b-full
                     h-[120px]
                     w-[60vw]
                     -translate-y-[0.75rem]

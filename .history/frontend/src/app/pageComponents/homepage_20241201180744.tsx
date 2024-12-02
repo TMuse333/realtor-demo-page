@@ -17,7 +17,6 @@ import BigNav from "../../components/navbar/bigNav";
 import Footer2 from "../../components/footer/footer";
 import ContactCard from "../../components/contactCard/contactCard";
 import ApplicationForm from "@/components/applicationForm/applicationForm";
-// import Herobanner from "@/components/herobanner/herobanner";
 const Homepage =()=> {
   return (
     <>
@@ -28,12 +27,10 @@ const Homepage =()=> {
     excludedLink=""
     />
     <AuroraHero/>
-    {/* <Herobanner/> */}
-    {/* <div className="h-screen"/> */}
-    <CountUpStats
+    {/* <CountUpStats
     number1="45"
     number2="15.5"
-    number3="20"/>
+    number3="20"/> */}
 
 <ExperienceCard
     {...experienceCard2}
@@ -52,10 +49,6 @@ const Homepage =()=> {
     />
 
   <ExperienceCard
-    {...experienceCard1}
-    />
-
-<ExperienceCard
     {...experienceCard1}
     />
 

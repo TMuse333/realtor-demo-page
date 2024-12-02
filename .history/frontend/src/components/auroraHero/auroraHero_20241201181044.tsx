@@ -14,7 +14,7 @@ import side from '../../../public/placeholder.png'
 import building from '../../../public/hero-building.jpeg'
 import Image from "next/image";
 import remax from '../../../public/remax-balloon.png'
-
+import { useGeneralContext } from "@/context/context";
 
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
@@ -24,7 +24,7 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
   useEffect(() => {
     animate(color, COLORS_TOP, {
       ease: "easeInOut",
-      duration: 10,
+      duration: 15,
       repeat: Infinity,
       repeatType: "mirror",
     });
@@ -42,13 +42,22 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
     }
 }
 
-  const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, transparent 50%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+const backgroundImage = useMemo(() => {
+  return useMotionTemplate`radial-gradient(125% 125% at 50% 0%, transparent 50%, ${color})`;
+}, [color]);
 
+const border = useMemo(() => useMotionTemplate`1px solid ${color}`, [color]);
+const boxShadow = useMemo(() => useMotionTemplate`0px 4px 24px ${color}`, [color]);
+
+
+  const {setHeroInView} = useGeneralContext()
 
   const ref = useRef(null)
 
+  const inView = useInView(ref,{
+    once:false,
+    amount:0.1
+  })
 
   // useEffect(()=>{
   //   if(!inView){

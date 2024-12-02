@@ -14,7 +14,7 @@ import side from '../../../public/placeholder.png'
 import building from '../../../public/hero-building.jpeg'
 import Image from "next/image";
 import remax from '../../../public/remax-balloon.png'
-
+import { useGeneralContext } from "@/context/context";
 
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];

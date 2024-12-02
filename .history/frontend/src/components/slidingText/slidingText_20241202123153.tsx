@@ -49,7 +49,7 @@ reverse,subText,once }) => {
 
  
             <motion.h2
-                className=" bg-gradient-to-b from-black to-gray-400 bg-clip-text text-transparent 
+                className=" bg-gradient-to-b from-black to-gray-300 bg-clip-text text-transparent 
                 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center relative transition-colors
                 mb-8"
                 // style={!slideComplete ? { x, opacity } : {}} // Apply the animated styles
