@@ -65,7 +65,6 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
     <motion.section
      ref={ref}
       className="relative  grid min-h-screen place-content-center overflow-hidden px-4  text-gray-200 z-[3]
-      pb-8
     "
     >
 
@@ -128,7 +127,7 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
        
 
-<section className="flex">
+
 
 
         <motion.button
@@ -165,7 +164,7 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
          View listings
           {/* <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" /> */}
         </motion.button>
-        </section>
+
    
       </div>
 

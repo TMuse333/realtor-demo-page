@@ -65,7 +65,6 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
     <motion.section
      ref={ref}
       className="relative  grid min-h-screen place-content-center overflow-hidden px-4  text-gray-200 z-[3]
-      pb-8
     "
     >
 
@@ -123,7 +122,7 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 <p className="my-6  max-w-[1000px] text-left text-base leading-relaxed md:text-lg md:leading-relaxed sm:text-lg md:text-xl font-medium">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsa porro nihil dolorem molestiae iste. Vel saepe ad dignissimos reiciendis.
   <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore minima eos iure quae modi sint eum tempore, beatae excepturi minus aspernatur
-  
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laborum.
 </p>
 
        

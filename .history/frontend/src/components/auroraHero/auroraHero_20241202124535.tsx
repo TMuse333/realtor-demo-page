@@ -14,7 +14,7 @@ import side from '../../../public/placeholder.png'
 import building from '../../../public/hero-building.jpeg'
 import Image from "next/image";
 import remax from '../../../public/remax-balloon.png'
-import placeholder from '../../../public/placeholder-logo.webp'
+import placeholder from ''
 
 
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
@@ -65,7 +65,6 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
     <motion.section
      ref={ref}
       className="relative  grid min-h-screen place-content-center overflow-hidden px-4  text-gray-200 z-[3]
-      pb-8
     "
     >
 
@@ -96,11 +95,11 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
          Realtor
         </span>
         <Image
-        src={placeholder}
+        src={remax}
         alt=''
         width={600}
         height={1300}
-        className=' w-[20vw] rounded-2xl my-4 object-contain object-cover
+        className=' w-[20vw] bg-white rounded-2xl my-4 object-contain object-cover
          mx-auto'
         
         />
@@ -120,10 +119,10 @@ const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
             "
             />
 
-<p className="my-6  max-w-[1000px] text-left text-base leading-relaxed md:text-lg md:leading-relaxed sm:text-lg md:text-xl font-medium">
+<p className="my-6 w-[80vw] max-w-[1000px] text-left text-base leading-relaxed md:text-lg md:leading-relaxed sm:text-lg md:text-xl font-medium">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ipsa porro nihil dolorem molestiae iste. Vel saepe ad dignissimos reiciendis.
   <br/>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere inventore minima eos iure quae modi sint eum tempore, beatae excepturi minus aspernatur
-  
+  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laborum.
 </p>
 
        
