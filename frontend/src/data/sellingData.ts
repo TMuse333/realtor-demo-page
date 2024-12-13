@@ -192,28 +192,28 @@ export const processCarousel = [
   },
   {
     title: "Step 2: Pricing and Strategy",
-    src: "/initial-meeting.webp", // Path to the image for the initial meeting
+    src: "/home.webp", // Path to the image for the initial meeting
     alt: "Experienced Realtor Meeting with a Client",
     description:
       "Work with your realtor to determine the optimal price for your home based on market trends and buyer demand. Develop a tailored selling strategy to maximize value.",
   },
   {
     title: "Step 3: Preparing Your Home",
-    src: "/initial-meeting.webp", // Path to the image for the initial meeting
+    src: "/home2.webp", // Path to the image for the initial meeting
     alt: "Experienced Realtor Meeting with a Client",
     description:
       "Get your home ready for the market with staging, professional photography, and minor touch-ups, ensuring it makes a great first impression.",
   },
   {
     title: "Step 4: Marketing and Exposure",
-    src: "/initial-meeting.webp", // Path to the image for the initial meeting
+    src: "/home3.webp", // Path to the image for the initial meeting
     alt: "Experienced Realtor Meeting with a Client",
     description:
       "Your realtor will list your home on multiple platforms, use targeted advertising, and leverage their network to attract the right buyers.",
   },
   {
     title: "Step 5: Negotiation and Closing",
-    src: "/initial-meeting.webp", // Path to the image for the initial meeting
+    src: "/home4.webp", // Path to the image for the initial meeting
     alt: "Experienced Realtor Meeting with a Client",
     description:
       "Once offers come in, your realtor will negotiate the best terms on your behalf and guide you through the closing process, ensuring a successful sale.",

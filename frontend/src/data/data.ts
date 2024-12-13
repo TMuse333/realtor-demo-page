@@ -21,7 +21,7 @@ export const experienceCard1 = {
 
 export const experienceCard2 = {
   title: "Highlight Your Unique Value as a Realtor",
-  src: "/helpful.jpg", // Use a relevant image for the card
+  src: "/home.webp", // Use a relevant image for the card
   alt: "Realtor in action helping clients",
   description: "Use this section to explain why potential clients should choose you over other realtors. Highlight the services and expertise you bring to the table, showcasing how you can make the buying or selling process seamless and stress-free. This is your chance to differentiate yourself and build credibility with visitors, helping you stand out in a competitive market.",
   aspects: [
@@ -39,7 +39,7 @@ export const experienceCard2 = {
 
 export const experienceCard3 = {
   title: "Showcase Your Seamless Real Estate Process",
-  src: "/helpful.jpg", // Use a relevant image for the card
+  src: "/home2.webp", // Use a relevant image for the card
   alt: "Realtor guiding clients through the process",
   description: "Use this section to outline your step-by-step process for making the real estate journey easy and stress-free for your clients. By explaining how you simplify the buying or selling experience, you build trust and reassure potential clients that they’ll be in capable hands. This transparency helps turn visitors into leads by demonstrating your professionalism and dedication.",
   aspects: [
