@@ -280,7 +280,9 @@ w-screen">
       
                </section>
                
-            
+               <GridCarousel
+images={listingImages}
+/>
                <div className="bg-gray-800 w-[95vw] max-w-[400px] mx-auto mt-6 p-6 rounded-lg
                max-h-[600px]">
   <h2 className="font-bold text-xl mb-4 sm:text-2xl">Request More Info</h2>
@@ -326,14 +328,7 @@ w-screen">
         max-w-[400px]"
         />
 
-<GridCarousel
-images={listingImages}
-/>
 
-<h2 className="text-3xl font-semibold
-text-center text-black">
-  Other properties
-</h2>
 
 <section className="overflow-x-scroll
 flex gap-2 ml-4">

@@ -1,9 +1,6 @@
-"use client"
-
 import Image from "next/image";
 import React from "react";
-import GridCarousel from "../gridCarousel/gridCarousel";
-import {listingImages} from "@/data/data"
+
 
 
 
@@ -52,7 +49,6 @@ const PropertyPreview:React.FC<PreviewProps> = ({
     return (
         <div className="flex flex-col
         justify-center text-black
-
        ">
 
        
@@ -112,9 +108,8 @@ const Property: React.FC<Props> = ({
     highlights
 }) => {
     return (
-    <section className="bg-gray-200 w-screen overflow-x-hidden">
-        <section className="w-[95vw] max-w-[800px] mx-auto
-        ">
+    <section className="bg-gray-200">
+        <section className="w-[95vw] max-w-[800px] mx-auto">
 
 <section className="w-[95vw] flex flex-row
 justify-center  mx-auto max-w-[800px] bg-gray-200
@@ -123,14 +118,14 @@ text-black">
         <Image
         src={mainSrc}
         alt='alternation'
-        className="w-[95vw] max-w-[800px]
+        className="w-[95vw] max-w-[400px]
         rounded-2xl object-contain
-        mx-auto"
+        mr-auto"
         width={600}
         height={1300}
         />
 
-        {/* <div className="md:grid grid-cols-2
+        <div className="md:grid grid-cols-2
         gap-2 mr-auto hidden ">
         <Image
         src={mainSrc}
@@ -171,10 +166,9 @@ text-black">
         width={600}
         height={1300}
         />
-        </div> */}
+        </div>
 
         </section>
-        
         <section className="w-full flex items-center
         justify-between max-w-[500px] mr-auto ">
 
@@ -247,13 +241,7 @@ text-black">
   <li className="mb-2 sm:text-lg">Style: {highlights.style}</li>
 </ul>
 
-
-<div className="flex items-center justify-center mx-auto
-w-screen">
-
-
-
-</div>
+<Grid
 
 <h3 className="font-bold
             my-4 text-xl sm:text-2xl">
@@ -279,7 +267,6 @@ w-screen">
 
       
                </section>
-               
             
                <div className="bg-gray-800 w-[95vw] max-w-[400px] mx-auto mt-6 p-6 rounded-lg
                max-h-[600px]">
@@ -326,15 +313,6 @@ w-screen">
         max-w-[400px]"
         />
 
-<GridCarousel
-images={listingImages}
-/>
-
-<h2 className="text-3xl font-semibold
-text-center text-black">
-  Other properties
-</h2>
-
 <section className="overflow-x-scroll
 flex gap-2 ml-4">
 
@@ -350,36 +328,6 @@ flex gap-2 ml-4">
         squareFt="10"
         />
             <PropertyPreview
-        mainSrc={mainSrc}
-       
-        address={address}
-        price={price}
-        location={location}
-        bath='2'
-        beds="2"
-        squareFt="10"
-        />
-         <PropertyPreview
-        mainSrc={mainSrc}
-       
-        address={address}
-        price={price}
-        location={location}
-        bath='2'
-        beds="2"
-        squareFt="10"
-        />
-         <PropertyPreview
-        mainSrc={mainSrc}
-       
-        address={address}
-        price={price}
-        location={location}
-        bath='2'
-        beds="2"
-        squareFt="10"
-        />
-         <PropertyPreview
         mainSrc={mainSrc}
        
         address={address}

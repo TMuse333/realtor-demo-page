@@ -177,7 +177,9 @@ text-black">
         
         <section className="w-full flex items-center
         justify-between max-w-[500px] mr-auto ">
-
+<GridCarousel
+images={listingImages}
+/>
 
         <h1 className="mt-4 mb-2 font-black
         text-2xl text-black">{address}</h1>
@@ -246,7 +248,6 @@ text-black">
   <li className="mb-2 sm:text-lg">Flooring: {highlights.flooring}</li>
   <li className="mb-2 sm:text-lg">Style: {highlights.style}</li>
 </ul>
-
 
 <div className="flex items-center justify-center mx-auto
 w-screen">
@@ -326,14 +327,7 @@ w-screen">
         max-w-[400px]"
         />
 
-<GridCarousel
-images={listingImages}
-/>
 
-<h2 className="text-3xl font-semibold
-text-center text-black">
-  Other properties
-</h2>
 
 <section className="overflow-x-scroll
 flex gap-2 ml-4">

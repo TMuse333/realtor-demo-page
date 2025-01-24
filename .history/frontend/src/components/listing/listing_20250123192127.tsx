@@ -332,7 +332,7 @@ images={listingImages}
 
 <h2 className="text-3xl font-semibold
 text-center text-black">
-  Other properties
+  
 </h2>
 
 <section className="overflow-x-scroll

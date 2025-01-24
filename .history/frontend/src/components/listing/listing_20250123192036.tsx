@@ -326,14 +326,7 @@ w-screen">
         max-w-[400px]"
         />
 
-<GridCarousel
-images={listingImages}
-/>
 
-<h2 className="text-3xl font-semibold
-text-center text-black">
-  Other properties
-</h2>
 
 <section className="overflow-x-scroll
 flex gap-2 ml-4">

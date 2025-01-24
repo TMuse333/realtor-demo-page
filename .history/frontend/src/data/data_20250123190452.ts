@@ -281,34 +281,6 @@ export const contactImages = [
   }
 ]  
 
-export const listingImages = [
-  {
-    url: '/place-holder.jpg',
-    title: 'Image 1'
-  },
-  {
-    url: '/place-holder.jpg',
-    title: 'Image 2'
-  },
-  {
-    url: '/place-holder.jpg',
-    title: 'Image 3'
-  },
-  {
-    url: '/place-holder.jpg',
-    title: 'Image 4'
-  },
-  {
-    url: '/place-holder.jpg',
-    title: 'Image 5'
-  },
-  {
-    url: '/place-holder.jpg',
-    title: 'Image 6'
-  }
-];
-
-
 
 
   
