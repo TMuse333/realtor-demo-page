@@ -55,9 +55,7 @@ const Homepage =()=> {
     {...experienceCard1}
     />
 
-<ExperienceCard
-    {...experienceCard1}
-    />
+
 
     <Testimonials/>
     <section className="text-center

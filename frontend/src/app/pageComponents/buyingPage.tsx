@@ -23,7 +23,7 @@ const BuyingPage = () => {
         excludedLink="Buying a home"
         />
         <main className="w-screen mt-10
-        bg-gray-200">
+        bg-gray-200 overflow-x-hidden">
 
 <ServiceHerobanner
 alt='buying an image like a real one'

@@ -244,7 +244,7 @@ interface SubMenuProps {
     }
 
     return (
-        <nav className={`fixed top-0 right-0 bg-transparent
+        <nav className={`fixed top-0 right-0 bg-black
         h-screen w-[75vw] max-w-[470px] z-10 transition-transform
         
       ${!subMenuClicked ? 'translate-x-full' : 'translate-x-0'}`}>
@@ -265,7 +265,7 @@ interface SubMenuProps {
   {links.map((link, index) => (
     <li
       key={index}
-      className={`text-md sm:text-xl mb-4 mr-auto text-white pl-2 pr-2 hover:text-black]`}>
+      className={`text-md sm:text-xl mb-4 mr-auto text-white pl-2 pr-2 hover:text-gray-200]`}>
       {link.destination ? (
         <Link href={link.destination}>
           {link.name}
@@ -287,14 +287,14 @@ interface SubMenuProps {
 
                             <button className="bg-transparent
                             top-[5%] absolute right-[10%] !text-2xl
-                            hover:text-gray-500"
+                            hover:text-gray-200"
                             onClick={exitFullMobileNav}>
                                 X
                             </button>
 
                             <button onClick={handleSecondarySubLeave}
                              className="absolute top-[5%]
-                             bg-transparent !text-lg hover:text-q-blue
+                             bg-transparent !text-lg hover:text-gray-200
                              transition-colors">Back</button>
 
                             
@@ -304,7 +304,7 @@ interface SubMenuProps {
                                 {links[secondaryLinksIndex].secondaryLinks.map((link,index)=> (
                                   
                                         <li className="mb-2 text-white transition-colors
-                                         hover:text-black md:xl"
+                                         hover:text-gray-200 md:xl"
                                          key={index}>
                                             <Link
                                   

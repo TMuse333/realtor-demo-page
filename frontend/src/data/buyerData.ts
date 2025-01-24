@@ -1,5 +1,5 @@
 export const buyingHerobanner = {
-    src: '/buy-home.webp',
+    src: '/home4.webp',
     title: "Find Your Dream Home with Confidence",
     description:
       "This page is dedicated to guiding homebuyers through every step of the journey. From exploring listings to closing the deal, we provide you with the resources and expertise to make informed decisions and find the perfect home that fits your needs and lifestyle.",
@@ -9,7 +9,7 @@ export const buyingHerobanner = {
   
 
 export const parallax1Data = {
-    src: "/buy-home.webp",
+    src: "/home3.webp",
     alt: "A person in a discussion about buying a home",
     isVideo: false,
     title: "How to Buy a Home: A Step-by-Step Guide",
@@ -19,7 +19,7 @@ export const parallax1Data = {
   };
   
   export const parallax2Data = {
-    src: "/buy-home.webp",
+    src: "/home5.webp",
     alt: "A couple looking at houses on a laptop",
     isVideo: false,
     title: "The Initial Search: Finding Your Perfect Home",
@@ -29,7 +29,7 @@ export const parallax1Data = {
   };
   
   export const parallax3Data = {
-    src: "/buy-home.webp",
+    src: "/home6.webp",
     alt: "A handshake between a buyer and a realtor",
     isVideo: false,
     title: "Closing the Deal: Making Your Dream a Reality",
@@ -39,7 +39,7 @@ export const parallax1Data = {
   };
 
   export const ImageTextBoxData = {
-    src: '/buy-home.webp',
+    src: '/home7.webp',
     alt: '',
     title: 'title here',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facere asperiores error earum dolorum obcaecati odio optio consequatur quisquam atque? Quae quod aliquid expedita tenetur!'+
@@ -51,7 +51,7 @@ export const parallax1Data = {
   
 
   export const experienceCardData = {
-    src: "/buy-home.webp",
+    src: "/home2.webp",
     alt: "A professional meeting discussing home-buying options",
     isVideo: false,
     title: "Start Your Home-Buying Journey with Confidence",
